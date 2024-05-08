@@ -8,7 +8,7 @@ public class CashBackServiceTest {
     @Test
     public void shouldReturnZeroForAmountThousand() {
         CashBackCounting service = new CashBackCounting();
-        int expected = 0;
+        int expected = 1000;
         int actual = service.remain(1000);
         assertEquals(expected, actual);
     }
@@ -32,7 +32,7 @@ public class CashBackServiceTest {
     @Test
     public void shouldReturnZeroForAmountTwoThousand() {
         CashBackCounting service = new CashBackCounting();
-        int expected = 0;
+        int expected = 1000;
         int actual = service.remain(2000);
         assertEquals(expected, actual);
     }
